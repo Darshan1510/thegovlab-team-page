@@ -2,6 +2,11 @@
 
 This project recreates the team page of TheGovLab website using React, TypeScript, Vite, and Bootstrap. The page dynamically fetches team member data from an API, displays it in styled cards, and includes features such as hover effects and responsive design.
 
+## Live Demo
+
+Please visit this site to view the live demo: [TheGovLab Team Page](https://thegovlab-team-page.netlify.app/)
+ 
+
 ## Features
 
 - Dynamic fetching and display of team member data
