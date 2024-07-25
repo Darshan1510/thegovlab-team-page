@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Footer />
       <div
         className="d-flex justify-content-center align-items-center gap-4"
-        style={{ backgroundColor: "black", color: "white", height: "90px", fontSize: "14px" }}
+        style={{ backgroundColor: "black", color: "white", maxHeight: "110px", fontSize: "14px" }}
       >
         <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
           <img

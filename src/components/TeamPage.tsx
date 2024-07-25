@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { TeamMember } from "../types/TeamMember";
 import TeamMemberCard from "./TeamMemberCard";
+import "../styles/TeamPage.css";
 
 const API_ENDPOINT = "https://content.thegovlab.com/items/team";
 
@@ -53,10 +54,16 @@ const TeamPage: React.FC = () => {
 
   // Render the team member cards if data is successfully fetched and available
   return (
-    <div>
-      {teamMembers &&
-        teamMembers.length > 0 &&
-        teamMembers.map((member) => <TeamMemberCard key={member.id} member={member} />)}
+    <div className="mt-3 team-page">
+      <div className="">
+        {teamMembers &&
+          teamMembers.length > 0 &&
+          teamMembers.map((member) => (
+            <div key={member.id}>
+              <TeamMemberCard member={member} />
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

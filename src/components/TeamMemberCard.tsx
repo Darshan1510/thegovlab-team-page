@@ -13,8 +13,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   const [showProjects, setShowProjects] = useState<boolean>(false);
 
   return (
-    <div className="card mb-1 team-member-card border-top">
-      <div className="row g-0">
+    <div className="card mb-1 team-member-card border-bottom">
+      <div className="row g-0 justify-content-center">
         <div className="col-lg-3 col-md-4 p-2">
           <img
             src={member.picture_blog2020 ? member.picture_blog2020 : ""}
@@ -22,10 +22,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             alt={member.name}
           />
         </div>
-        <div className="col-lg-8 col-md-8">
+        <div className="col-lg-7 col-md-8 d-flex justify-content-center">
           <div className="card-body">
             <h3 className="card-title">{member.name}</h3>
-            <h4 className="card-subtitle mb-2">{member.title ? member.title : ""}</h4>
+            <h4 className="card-subtitle mb-2">
+              {member.title && member.title != "NULL" ? member.title : ""}
+            </h4>
             {showMore ? (
               // Display full bio if showMore is true, else display short bio
               <p

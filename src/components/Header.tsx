@@ -28,14 +28,14 @@ const Header: React.FC = () => {
             />
           </a>
         </div>
-        <div className="col-lg-4 d-none d-lg-inline-flex justify-content-end align-items-center gap-2">
+        <div className="col-lg-4 d-none d-lg-inline-flex justify-content-end align-items-center gap-1">
           <a
             href="https://thegovlab.org/our-sites"
             target="_blank"
             className="btn btn-link text-decoration-none rounded-0"
           >
             OUR SITES
-          </a>
+          </a>&nbsp;
           <a href="https://twitter.com/TheGovLab" target="_blank" className="btn btn-link-icon">
             <i className="bi bi-twitter"></i>
           </a>

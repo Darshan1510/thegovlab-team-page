@@ -37,8 +37,9 @@
 }
 
 .header .btn-link-icon {
-  color: #755999;
+  color: hsl(266, 26%, 47%);
   font-size: 14pt;
+  padding: 8px;
 }
 
 .header .btn-link-icon:hover {

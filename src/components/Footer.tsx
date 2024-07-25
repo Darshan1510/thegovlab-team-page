@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="footer mt-5">
       <div className="container">
         <div className="row gap-4">
-          <div className="col-md-2">
+          <div className="col-md-3 text-start">
             <h6>Sections</h6>
 
             <ul className="list-unstyled">
