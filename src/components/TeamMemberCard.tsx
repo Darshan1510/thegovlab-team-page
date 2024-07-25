@@ -15,7 +15,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   return (
     <div className="card mb-1 team-member-card border-bottom">
       <div className="row g-0 justify-content-center">
-        <div className="col-lg-3 col-md-4 p-2">
+        <div className="col-lg-3 col-md-4">
           <img
             src={member.picture_blog2020 ? member.picture_blog2020 : ""}
             className="img-fluid rounded-circle"
