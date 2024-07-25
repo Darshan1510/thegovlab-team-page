@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { TeamMember } from "../types/TeamMember";
 import TeamMemberCard from "./TeamMemberCard";
-import "../styles/TeamPage.css";
 
 const API_ENDPOINT = "https://content.thegovlab.com/items/team";
 
@@ -34,7 +33,7 @@ const TeamPage: React.FC = () => {
         setTeamMembers(filteredMembers);
       } catch (error) {
         // Set error message if API call fails
-        setError("Issue occrured while fetching team members");
+        setError("Issue occurred while fetching team members");
       } finally {
         setLoading(false);
       }
