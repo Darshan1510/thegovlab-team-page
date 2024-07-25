@@ -93,6 +93,9 @@
 }
 
 @media (max-width: 800px) {
+  .team-member-card {
+    padding: 0px !important;
+  }
   .team-member-card .btn {
     color: #523080;
     background-color: #0000001a;
